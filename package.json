@@ -1,20 +1,31 @@
 {
-  "name": "lotr-api-sdk",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@pawfv/lotr-api-sdk",
+  "version": "1.0.25",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node src/test"
+    "build": "rm -rf dist && npx tsc && tsc -p tsconfig-cjs.json",
+    "dev": "ts-node src/test.ts",
+    "publish:npm": "./bin/publish"
   },
+  "type": "module",
   "keywords": [],
-  "author": "",
+  "author": "PawFV",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0"
   },
   "devDependencies": {
+    "@pawfv/lotr-api-sdk": "^1.0.25",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PawFV/lotr-api-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PawFV/lotr-api-sdk/issues"
+  },
+  "homepage": "https://github.com/PawFV/lotr-api-sdk#readme",
+  "description": ""
 }

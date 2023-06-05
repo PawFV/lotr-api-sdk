@@ -1,5 +1,5 @@
 import axios from 'axios'
-import * as controllers from './controllers/'
+import controllers from './controllers/'
 
 export function createLOTRSDK({ baseURL, authToken }: { baseURL: string; authToken: string }) {
   axios.defaults.baseURL = baseURL
@@ -9,3 +9,5 @@ export function createLOTRSDK({ baseURL, authToken }: { baseURL: string; authTok
     ...controllers
   }
 }
+
+export default createLOTRSDK

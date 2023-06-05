@@ -1,2 +1,8 @@
-export { movie } from './movie'
-export { quote } from './quote'
+import { movie } from './movie'
+import { quote } from './quote'
+
+
+export default  {
+  movie,
+  quote
+} 
