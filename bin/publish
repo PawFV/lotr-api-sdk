@@ -1,5 +1,0 @@
-#!/bin/bash
-
-git add . && git commit -am "commit before bumping version" 
-
-npm run build && npm version patch && npm publish --access public

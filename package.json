@@ -1,13 +1,13 @@
 {
   "name": "@pawfv/lotr-api-sdk",
-  "version": "1.0.27",
+  "version": "1.0.31",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && npx tsc && tsc -p tsconfig-cjs.json",
     "dev": "ts-node src/test.ts",
-    "publish:npm": "./bin/publish"
+    "publish:npm": "./bin/publish",
+    "test": "npx jest"
   },
-  "type": "module",
   "keywords": [],
   "author": "PawFV",
   "license": "ISC",
@@ -16,6 +16,9 @@
   },
   "devDependencies": {
     "@pawfv/lotr-api-sdk": "^1.0.25",
+    "@types/jest": "^29.5.2",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   },

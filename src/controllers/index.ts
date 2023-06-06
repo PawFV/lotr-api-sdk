@@ -1,8 +1,7 @@
 import { movie } from './movie'
 import { quote } from './quote'
 
-
-export default  {
+export default {
   movie,
   quote
-} 
+}
