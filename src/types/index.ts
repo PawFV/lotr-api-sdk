@@ -36,6 +36,7 @@ interface FilteringOptions {
   greaterThanOrEqual?: Record<string, string>
 }
 
+/** For detailed information about filters please checkout the [documentation](https://the-one-api.dev/documentation) */
 export interface FilterOptions extends PaginationOptions, SortingOptions, FilteringOptions {}
 
 export interface BaseResponse<Doc> {

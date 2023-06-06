@@ -2,7 +2,10 @@
 
 This package provides a client SDK for interacting with the LOTR (Lord of the Rings) API.
 
+npm page: https://www.npmjs.com/package/@pawfv/lotr-api-sdk
+
 ## Installation
+
 To install the package, run the following command:
 
 ```shell
@@ -10,6 +13,7 @@ npm install @pawfv/lotr-api-sdk
 ```
 
 ## Configuration
+
 The `createLOTRSDK` function expects an object with the following configuration parameters:
 
 `baseURL`: The base URL of the LOTR API. Because it could change from time to time, please check the [main site](https://the-one-api.dev/).
@@ -38,6 +42,7 @@ sdk.movie.getById('movieId')
 ```
 
 ## Methods
+
 The SDK provides the following methods for interacting with the LOTR API:
 
 ```js
@@ -53,9 +58,10 @@ quote.getById(quoteId: string, filterOptions?: FilterOptions)
 quote.getAll(filterOptions?: FilterOptions) 
 ```
 
-Please refer to the source code and documentation for detailed information about the available options and response types.
+Please refer to the [api documentation](https://the-one-api.dev/documentation) for detailed information about the available options and response types.
 
 ## Example
+
 Here's an example of how to use the SDK to fetch a movie by its ID:
 
 ```javascript
@@ -69,9 +75,11 @@ sdk.movie.getById('5cd95395de30eff6ebccde5c')
 ```
 
 ## Support and Issues
+
 For any issues or support, please create an issue on the GitHub repository: https://github.com/PawFV/lotr-api-sdk
 
 ## License
+
 This package is licensed under the MIT license.
 
 If you have any questions or feedback, please don't hesitate to reach out.
