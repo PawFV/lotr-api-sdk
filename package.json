@@ -1,6 +1,6 @@
 {
   "name": "@pawfv/lotr-api-sdk",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf dist && npx tsc && tsc -p tsconfig-cjs.json",
