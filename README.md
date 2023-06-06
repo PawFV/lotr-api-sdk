@@ -17,7 +17,7 @@ The `createLOTRSDK` function expects an object with the following configuration 
 `authToken`: The authentication token to be included in the request headers. You must [create an account](https://the-one-api.dev/account) to get a valid token.
 
 Usage
-To use the SDK, you need to create an instance by calling the createLOTRSDK function and passing the required configuration parameters:
+To use the SDK, you need to create an instance by calling the `createLOTRSDK` function and passing the required configuration parameters:
 
 ```javascript
 import { createLOTRSDK } from '@pawfv/lotr-api-sdk';
