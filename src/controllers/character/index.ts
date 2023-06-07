@@ -1,11 +1,11 @@
 import axios from 'axios'
 import type { FilterOptions } from '../../types'
-import type { MovieResponse } from './types'
+import type { CharacterResponse } from './types'
 
-const movie = {
+const character = {
   async getById(id: string, filterOptions: FilterOptions = {}) {
     try {
-      const response = await axios.get<MovieResponse.GetById>(`/movie/${id}`, {
+      const response = await axios.get<CharacterResponse.GetById>(`/character/${id}`, {
         params: filterOptions
       })
       return response.data
@@ -16,7 +16,7 @@ const movie = {
 
   async getAll(filterOptions: FilterOptions = {}) {
     try {
-      const response = await axios.get<MovieResponse.GetAll>('/movie', { params: filterOptions })
+      const response = await axios.get<CharacterResponse.GetAll>('/character', { params: filterOptions })
       return response.data
     } catch (error) {
       throw new Error(`Error: ${error.message}`)
@@ -25,7 +25,7 @@ const movie = {
 
   async getQuotesById(id: string, filterOptions: FilterOptions = {}) {
     try {
-      const response = await axios.get<MovieResponse.GetQuote>(`/movie/${id}/quote`, {
+      const response = await axios.get<CharacterResponse.GetQuote>(`/character/${id}/chapter`, {
         params: filterOptions
       })
       return response.data
@@ -35,4 +35,4 @@ const movie = {
   }
 }
 
-export { movie }
+export { character }
