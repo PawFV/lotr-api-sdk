@@ -48,7 +48,7 @@ I could have improved many things, since I made it this far I'll finish the endp
 What I'll finish/improve:
 
 - [ ] Support with typescript in nodejs using ts-node, currently I only tested this in common frontend frameworks such as Vue/React and Nodejs (only js).
-- [ ] Finish the rest of endpoints.
+- [x] Finish the rest of endpoints.
 - [ ] Adding jsdocs to all code.
 - [ ] Setup CI/CD with templates for opening PRs/Issues.
 - [ ] Setup CI/CD with branch protection rules, should pass tests from PR to be able to merge to master.
