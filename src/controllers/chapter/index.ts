@@ -1,11 +1,11 @@
 import axios from 'axios'
 import type { FilterOptions } from '../../types'
-import type { QuoteResponse } from './types'
+import type { ChapterResponse } from './types'
 
-const quote = {
+const chapter = {
   async getById(id: string, filterOptions: FilterOptions = {}) {
     try {
-      const response = await axios.get<QuoteResponse.GetById>(`/quote/${id}`, {
+      const response = await axios.get<ChapterResponse.GetById>(`/chapter/${id}`, {
         params: filterOptions
       })
       return response.data
@@ -16,7 +16,7 @@ const quote = {
 
   async getAll(filterOptions: FilterOptions = {}) {
     try {
-      const response = await axios.get<QuoteResponse.GetAll>('/quote', { params: filterOptions })
+      const response = await axios.get<ChapterResponse.GetAll>('/chapter', { params: filterOptions })
       return response.data
     } catch (error) {
       throw new Error(`Error: ${error.message}`)
@@ -24,4 +24,4 @@ const quote = {
   }
 }
 
-export { quote }
+export { chapter }
