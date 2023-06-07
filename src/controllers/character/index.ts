@@ -25,7 +25,7 @@ const character = {
 
   async getQuotesById(id: string, filterOptions: FilterOptions = {}) {
     try {
-      const response = await axios.get<CharacterResponse.GetQuote>(`/character/${id}/chapter`, {
+      const response = await axios.get<CharacterResponse.GetQuote>(`/character/${id}/quote`, {
         params: filterOptions
       })
       return response.data
